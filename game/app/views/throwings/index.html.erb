@@ -1,20 +1,24 @@
 <div class="container">
-	<h1 class="title">Bowling Game<h1>
-
-	<div class="cal">
-	  <p>Calculate your final result of your game line!</p>
-
-		<%-#verificar si el usuario ingresa 20 o 21 numeros si no enviar un aviso que le falta ingresar valores.-%>
-	</div>
-
-	<div class="field">
-	  <div class="control"> 
-	    <label class="label">Enter all rolls per frame </label>
-	    <input class="input is-primary" type="text" placeholder="rolls">
+      <h1 class="title init">Bowling Game<h1>
+	 <div class="newScore">
+                <%= link_to "Add new game", new_throwing_path, class: "index-link" %>
 	  </div>
-	</div>
-	
-	<div class="control">
-	  <button class="button is-primary">Score</button>
-	</div>
+
+      <div class="index">
+
+      <ul>
+	    <li class="subTitle">Input</li>
+            <% @throwings.each do |throwing| %>
+              <li> <%= throwing.entrada %> </li>  
+            <% end %>
+      </ul>
+
+      <ul>
+	    <li class="subTitle">Score</li>
+            <% @throwings.each do |throwing| %>
+              <li> <%= throwing.score %> </li>  
+            <% end %>
+      </ul>
+      </div>
+
 </div>

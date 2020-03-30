@@ -1,0 +1,22 @@
+
+<div class="container">
+	<h1 class="title init">Bowling Game<h1>
+			<div class="newScore">
+				<%= link_to "Add new game", new_throwing_path, class: "index-link" %>
+			</div>
+
+
+        <div class="cal">
+          <p class="text">Calculate your final result of your game line!</p>
+
+                <%-#verificar si el usuario ingresa 20 o 21 numeros si no enviar un aviso que le falta ingresar valores.-%>
+
+		<%= form_for @throwing do |throwing_form| %>
+			<%= throwing_form.text_field :entrada %>
+			<%= throwing_form.submit "Score", id:'button' %>
+		<% end %>
+	
+	</div>
+
+</div>
+
