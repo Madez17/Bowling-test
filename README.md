@@ -8,7 +8,7 @@ not do:
 - We will not check for valid rolls.
 - We will not check for correct number of rolls and frames.
 - We will not provide scores for intermediate frames.
-# Depending on the application, this might or might not be a valid way to define a complete
+### Depending on the application, this might or might not be a valid way to define a complete
 story, but we do it here for purposes of keeping the kata light. I think you’ll see that
 improvements like those above would go in readily if they were needed for real.
 ### We can briefly summarize the scoring for this form of bowling:
