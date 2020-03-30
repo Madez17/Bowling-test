@@ -1,5 +1,7 @@
 # Bowling-test
 
+![Imgur](https://i.imgur.com/fQMy4uh.jpg)
+
 ## Problem Description
 Create a program, which, given a valid sequence of rolls for one line of American Ten-Pin
 Bowling, produces the total score for the game. Here are some things that the program will
@@ -34,6 +36,8 @@ What makes this game interesting to score is the lookahead in the scoring for st
 spare. At the time we throw a strike or spare, we cannot calculate the frame score: we have
 to wait one or two frames to find out what the bonus is.
 Suggested Test Cases
+
+
 ### When scoring X indicates a strike, / indicates a spare, - indicates a miss:
 - 12 rolls: 12 strikes: XXXXXXXXXXXX = 10+10+10 + 10+10+10 + 10+10+10 +
 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 + 10+10+10 =
@@ -43,3 +47,15 @@ Suggested Test Cases
 9 + 9 = 90
 - 21 rolls: 10 pairs of 5 and spare, with a final 5: 5/5/5/5/5/5/5/5/5/5/5 = 10+5 + 10+5 +
 10+5 + 10+5 + 10+5 + 10+5 + 10+5 + 10+5 + 10+5 + 10+5 = 150
+
+
+## How to use
+
+- Git clone
+- cd Bowling-test/game
+- rails s
+- rake db:create
+- rake db:migrate
+- rake test #Try test
+
+
